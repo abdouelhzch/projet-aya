@@ -3,7 +3,7 @@ document.getElementById("btn").addEventListener("click", function () {
 
     // إنشاء النص
     const p = document.createElement("p");
-    p.textContent = "Dabdoba aya fost 9liyb";
+    p.textContent = "Dabdoba aya 😘";
 
     // تنسيق النص
     p.style.color = "red";
