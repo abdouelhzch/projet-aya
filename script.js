@@ -1,8 +1,21 @@
 document.getElementById("btn").addEventListener("click", function () {
-    const message = document.getElementById("message");
-    message.textContent = "Aya ! Dabdoba aya❤️"; // النص اللي بغيت
-    message.style.color = "red"; // اللون الأحمر
-    message.style.fontSize = "24px"; // الحجم
-    message.style.textAlign = "center"; // الوسط
-    message.style.fontWeight = "bold"; // غامق
+    const container = document.getElementById("heart-container");
+
+    // إنشاء النص
+    const p = document.createElement("p");
+    p.textContent = "Dabdoba aya fost 9liyb";
+
+    // تنسيق النص
+    p.style.color = "red";
+    p.style.fontSize = "24px";
+    p.style.textAlign = "center";
+    p.style.fontWeight = "bold";
+
+    // إنشاء القلب خلف النص
+    container.innerHTML = "❤️";
+    container.style.fontSize = "50px";
+    container.style.textAlign = "center";
+
+    // إضافة النص فوق القلب
+    container.appendChild(p);
 });
